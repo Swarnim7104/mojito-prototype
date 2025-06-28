@@ -85,7 +85,7 @@ body {
     }
 
     .noisy {
-        @apply absolute inset-0 size-full bg-[url("/images/noise.png")];
+        @apply absolute inset-0 size-full bg-[url("images/noise.webp")];
     }
 
     #hero {
