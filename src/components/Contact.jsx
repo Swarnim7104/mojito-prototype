@@ -31,8 +31,8 @@ const Contact = () => {
  
  return (
 	<footer id="contact">
-	 <img src="/images/footer-right-leaf.webp" alt="leaf-right" id="f-right-leaf" />
-	 <img src="/images/footer-left-leaf.webp" alt="leaf-left" id="f-left-leaf" />
+	 <img src={`${import.meta.env.BASE_URL}images/footer-right-leaf.webp`} alt="leaf-right" id="f-right-leaf" />
+	 <img src={`${import.meta.env.BASE_URL}images/footer-left-leaf.webp`} alt="leaf-left" id="f-left-leaf" />
 	 
 	 <div className="content">
 		<h2>Where to Find Us</h2>
@@ -69,7 +69,7 @@ const Contact = () => {
 				rel="noopener noreferrer"
 				aria-label={social.name}
 			 >
-				<img src={social.icon} />
+				<img src={typeof social.icon === 'string' && !social.icon.startsWith('http') ? `${import.meta.env.BASE_URL}${social.icon.replace(/^\//, '')}` : social.icon} />
 			 </a>
 			))}
 		 </div>

@@ -59,8 +59,8 @@ const Hero = () => {
   return (
     <><section id = 'hero' className="noisy">
         <h1 className='title'>MOJITO</h1>
-        <img src="/images/hero-left-leaf.webp" alt="left-leaf" className='left-leaf' />
-        <img src="/images/hero-right-leaf.webp" alt="right-leaf" className='right-leaf' />
+        <img src={`${import.meta.env.BASE_URL}images/hero-left-leaf.webp`} alt="left-leaf" className='left-leaf' />
+        <img src={`${import.meta.env.BASE_URL}images/hero-right-leaf.webp`} alt="right-leaf" className='right-leaf' />
         <div className="body">
             <div className="content">
                 <div className="space-y-5 hidden md:block">
@@ -81,7 +81,7 @@ const Hero = () => {
         <div className="video absolute inset-0">
             <video
             ref={videoRef}
-            src="/videos/output.mp4"
+            src={`${import.meta.env.BASE_URL}videos/output.mp4`}
             muted 
             playsInline
             preload="auto"
