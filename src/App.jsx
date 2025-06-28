@@ -3,6 +3,7 @@ import gsap from 'gsap';
 gsap.registerPlugin(ScrollTrigger, SplitText);
 import Navbar from './components/navbar';
 import Hero from './components/Hero';
+import Cocktails from './components/cocktails';
 
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
    <main>
     <Navbar />
     <Hero />
-    <div className="h-dvh bg-black" />
+    <Cocktails />
    </main>
   )
 }
